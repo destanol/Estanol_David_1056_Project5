@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link href="css/modal.css" rel="stylesheet" type="text/css">
+            <link href="css/reset.css" rel="stylesheet" type="text/css">
+            <link href="css/main.css" rel="stylesheet" type="text/css">
+            <link href="css/footer.css" rel="stylesheet" type="text/css">
+
+    <title>Thames River Anglers Association</title>
+</head>
+<body>
+    <div id="container">
+    <h1 class="hidden">Thames River Anglers Association</h1>
+    <h2 class="hidden" id="main">Main</h2>
+    <img src="river_mobile.png" alt="Thames River Landscape" width="" height="" >
+<!-- 
+    Learn how to embed responsive imgs
+    https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+ -->
+    <img src="traa-logo.svg" alt="Thames River Anglers Association Logo" width="" height="" class="sticky-tl">
+    <nav id="navCon" class="sticky-tr">
+            <ul id="siteNav">
+                <li class="navItem"><a href="#main">        Home      </a></li>
+                <li class="navItem"><a href="#aboutCon">    About     </a></li>
+                <li class="navItem"><a href="#articleCon">  Events    </a></li>
+                <li class="navItem"><a href="#projectsCon"> Projects  </a></li>
+                <li class="navItem"><a href="#footerCon">   Links     </a></li>
+                <li class="navItem"><a href="#contactUsCon">Contact Us</a></li>
+                <li>
+                    <ul class="socialMedia">
+                        <li><a target="_blank" href="https://www.facebook.com/groups/4TRAA/">                   <img src="images/icon-fb.png" class="socialMediaIco" width="100" height="100" alt="facebook"></a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/channel/UCSuwqQ-HzLQw-gylALz5YkA"> <img src="images/icon-yt.png" class="socialMediaIco" width="100" height="100" alt="youtube"></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/?hl=en">                         <img src="images/icon-ig.png" class="socialMediaIco" width="100" height="100" alt="instagram"></a></li>
+                        <li><a target="_blank" href="https://twitter.com/">                                     <img src="images/icon-tw.png" class="socialMediaIco" width="100" height="100" alt="instagram"></a></li>
+                    </ul>
+                </li>
+            </ul>
+    </nav>
+    <div class="blockQuoteBg">
+        <p id="blockQuoteMain">Dedication Today For A Better Tomorrow</p>
+    </div>
+
+    <button class="button-sm">
+        <img src="" alt="" width="" height="">
+        <!--  
+            Membership Call to action button will open pop out modal box
+         -->
+    </button>
+    
+    <!-- Modal Popout Content -->
+    <section>
+        <h3>Be a part of the solution, become a member of the Thames River Anglers Association for only $25.</h3>
+    
+        <button class="close" onclick="closeModal()">x</button>
+
+        <p>
+            Proceeds go toward continuing many of the TRAA's most vital environmental projects.
+            Your membership also adds another voice to our efforts in protecting and enhancing aquatic habitats in the London & area community. 
+            Participate, Help Out, Have Fun and give a little bit back to the Thames River watershed! 
+        </p>
+        <p> To join, attend a TRAA event or email us for other options. </p>
+        <button type="button" class="close" onclick="closeModal()"><a href="#contactUs">Tell Me More</a></button>
+    </section>
+
+    <!--END Modal Popout Content -->
+    <h2 class="hidden" id="Our Mission"></h2>
+
+        <p>Our Story</p>
+        <div class="blockQuoteBg" id="missionStatement">
+            <p></p>
+        </div>
+
+
+    <button class="sticky-lr"> <!-- Scroll Back to top -->
+        <img><a href="#main"></a>
+    </button>
+
+</div>
+</body>
+</html>
