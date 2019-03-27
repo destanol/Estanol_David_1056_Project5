@@ -15,12 +15,12 @@
     <div id="container">
     <h1 class="hidden">Thames River Anglers Association</h1>
     <h2 class="hidden" id="main">Main</h2>
-    <img src="river_mobile.png" alt="Thames River Landscape" width="" height="" >
+    <img src="river_mobile.png" alt="Thames River Landscape" width="100" height="100" >
 <!-- 
     Learn how to embed responsive imgs
     https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
  -->
-    <img src="traa-logo.svg" alt="Thames River Anglers Association Logo" width="" height="" class="sticky-tl">
+    <img src="traa-logo.svg" alt="Thames River Anglers Association Logo" width="100" height="100" class="sticky-tl">
     <nav id="navCon" class="sticky-tr">
             <ul id="siteNav">
                 <li class="navItem"><a href="#main">        Home      </a></li>
@@ -43,17 +43,17 @@
         <p id="blockQuoteMain">Dedication Today For A Better Tomorrow</p>
     </div>
 
-    <button class="button-sm">
-        <img src="" alt="" width="" height="">
+    <div class="button-sm">
+        <!-- <img src="" alt="" width="" height=""> -->
         <!--  
             Membership Call to action button will open pop out modal box
          -->
-    </button>
+    </div>
     <!-- Modal Popout Content -->
     <section>
         <h3>Be a part of the solution, become a member of the Thames River Anglers Association for only $25.</h3>
     
-        <button class="close" onclick="closeModal()">x</button>
+        <div class="close" onclick="closeModal()">x</div>
 
         <p>
             Proceeds go toward continuing many of the TRAA's most vital environmental projects.
@@ -61,11 +61,11 @@
             Participate, Help Out, Have Fun and give a little bit back to the Thames River watershed! 
         </p>
         <p> To join, attend a TRAA event or email us for other options. </p>
-        <button type="button" class="close button-med" onclick="closeModal()"><a href="#contactUs">Tell Me More</a></button>
+        <div class="close button-med" onclick="closeModal()"><a href="#contactUs">Tell Me More</a></div>
     </section>
 
     <!--END Modal Popout Content -->
-    <h2 class="hidden" id="Our Mission"></h2>
+    <h2 class="hidden" id="mission">Our Mission</h2>
 
         <p>Our Story</p>
         <div class="missionStatement" >
@@ -74,7 +74,7 @@
             <span class="msBg">within the Thames Riverwaters.”</span> 
         </div>
 
-        <video src=""></video>
+        <!-- <video src=""></video> -->
 
         <p>              
             The TRAA is not a fishing club, although most members are anglers and share 
@@ -82,14 +82,14 @@
             likes to work at a grass roots level.
         </p>
 
-        <button>
+        <div>
             <a href="#events">Learn More</a>
-        </button>
+        </div>
 
 <!-- Scroll Back to top -->
-    <button class="sticky-lr"> 
-        <img><a href="#main"></a>
-    </button>
+    <div class="sticky-lr"> 
+        <!-- <img><a href="#main"></a> -->
+    </div>
 
 
     <h2 class="hidden" id="events">Events</h2>
@@ -109,15 +109,14 @@
             <p>
                 At this time there are still openings those wanting to be a part of the trout hatchery rotation. You can Contact Us or attend a TRAA General Meeting (see above) for more info.
             </p>
-            <button class="button-med"><a href="#map">View More</a></button>
+            <div class="button-med"><a href="#map">View More</a></div>
 
     <h2 class="hidden">Map</h2>
             <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2065.127125662328!2d-81.22002897702677!3d42.94601771960088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef3b01c9e9983%3A0x84558efdb9f3a3a1!2s790+Southdale+Rd+E%2C+London%2C+ON+N6E+1A8!5e0!3m2!1sen!2sca!4v1553643732021" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
             
         <h3>Come and talk to us at a TRAA General Meeting, Guests are Welcome!</h3>
-            <p>The TRAA meets every second Wednesday of each month. We always try to get the meetings started by 7:00pm so try to be there a few minutes beforehand. The venue is the Western Ontario Fish & Game Protective Association's clubhouse located just east of the Dearness Home on Southdale Road (East), on the North side of Southdale Road.
+            <p>The TRAA meets every second Wednesday of each month. We always try to get the meetings started by 7:00pm so try to be there a few minutes beforehand. The venue is the Western Ontario Fish & Game Protective Association's clubhouse located just east of the Dearness Home on Southdale Road (East), on the North side of Southdale Road.
                 <p> The address is 790 Southdale Road East, London, Ontario. </p>
-            </p>
     <h2 class="projectsTitle" id="projects">
         <a href="#projects">
         <span class="projectsTitleBg">Fundraising efforts are underway to get the funds we need</span>
@@ -150,7 +149,7 @@
                 <input    class="formInput" id="name" type="text" name="fullname" placeholder="Name" >
                 <input    class="formInput" id="subject" type="text" name="subject" placeholder="Subject" required>
                 <textarea class="formInput" id="message" name="message" placeholder="Leave a message" required></textarea>
-                <input    class="formInput" id="email"type="email" name="email" placeholder="Email">
+                <input    class="formInput" id="email" type="email" name="email" placeholder="Email">
                 <input    class="formInput" id="submitBtn" type="submit" value="Submit">
             </form>
         </div>
@@ -163,13 +162,13 @@
             <a href="http://tryrecycling.com/"> <img class="sponserLogo" src="images/logo-try-recycling.png"        width="300" height="100" alt="Try Recycling Inc">   </a>
             <a href="http://www.mumamanufacturing.com/"> <img class="sponserLogo" src="images/logo-muma.png"                 width="300" height="100" alt="Muma Manufacturing">  </a>
             <a href="https://anglingsports.ca/"> <img class="sponserLogo" src="images/logo-angling-sports-2018.png"  width="300" height="100" alt="Angling Sports">  </a>
-            <a href="https://www.guillevingreentech.com/"> <img class="sponserLogo" src="images/logo-guilleving-green-tech.png"width="300" height="100" alt="Guilleving Green Tech">   </a>
+            <a href="https://www.guillevingreentech.com/"> <img class="sponserLogo" src="images/logo-guilleving-green-tech.png" width="300" height="100" alt="Guilleving Green Tech">   </a>
         </div>
 
 
         <footer id="footerCon">
         <ul>
-            <a href="#contactUsCon"><li>Contact</li></a>
+            <li><a href="#contactUsCon">Contact</a></li>
             <li>90 Southdale Road East, London, Ontario</li>
             <li>Thames River Anglers Association, Copyright 2019</li>
         </ul>
