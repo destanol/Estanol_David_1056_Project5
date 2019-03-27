@@ -10,16 +10,17 @@
     <title>Thames River Anglers Association</title>
 </head>
 <body>
-    <div id="container">
-    <h1 class="hidden">Thames River Anglers Association</h1>
-    <h2 class="hidden" id="main">Main</h2>
+<div id="container">
+<div class="gridCon">
+    <h1>Thames River Anglers Association</h1>
+    <h2 id="main">Main</h2>
     <img src="river_mobile.png" alt="Thames River Landscape" width="100" height="100" >
 <!-- 
     Learn how to embed responsive imgs
     https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
  -->
     <img src="traa-logo.svg" alt="Thames River Anglers Association Logo" width="100" height="100" class="sticky-tl">
-    <nav id="navCon" class="sticky-tr">
+    <nav id="navCon" class="gridCon sticky-tr">
             <ul id="siteNav">
                 <li class="navItem"><a href="#main">        Home      </a></li>
                 <li class="navItem"><a href="#aboutCon">    About     </a></li>
@@ -90,9 +91,7 @@
     </div>
 
 
-    <h2 class="hidden" id="events">Events</h2>
-
-        <div></div>
+    <h2 id="events">Events</h2>
         <h3 class="articleTitle">Rod Building - Your First Time </h3>
         <span class="articleSubhead">7:00PM - Mondays, February 18 through March 11, 2019</span>
             <p  id="articleTextBlock"> 
@@ -137,12 +136,15 @@
             <span  id="donateBtn" class="button"> Donate Today</span>
         </a>
     </div>
+
+    
+    <section class="gridCon contactCon">
     <h2 id="contact">Contact Us</h2>
 
-        <div id="formCon">
-        <p>If you're with a like-minded organization or group looking for more information on the TRAA and its activities or if you're an individual who would like to get involved with the activities undertaken by the TRAA.
-        </p>
-        <span id="welcome">The TRAA would like to hear from you!</span>
+        <div class="formCon">
+            <p>If you're with a like-minded organization or group looking for more information on the TRAA and its activities or if you're an individual who would like to get involved with the activities undertaken by the TRAA.
+            </p>
+            <span id="welcome">The TRAA would like to hear from you!</span>
             <form action="php" autocomplete="off" method="post">
                 <input    class="formInput" id="name" type="text" name="fullname" placeholder="Name" >
                 <input    class="formInput" id="subject" type="text" name="subject" placeholder="Subject" required>
@@ -152,7 +154,7 @@
             </form>
         </div>
 
-
+    </section>
         
         <h2 id="sponserHeader"  >Local Businesses Step Up to Help Out the TRAA</h2>
         <div id="sponserLogoCon">
@@ -179,6 +181,7 @@
             <li><a href="">Links</a></li>
         </ul>
     </footer>
+</div>
     <script src="js/main.js"></script>
     </div>
 </body>
