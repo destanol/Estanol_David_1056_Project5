@@ -11,35 +11,50 @@
 </head>
 <body>
 <div id="container">
-<div class="gridCon">
-    <h1>Thames River Anglers Association</h1>
-    <h2 id="main">Main</h2>
-    <img src="river_mobile.png" alt="Thames River Landscape" width="100" height="100" >
+<header class="header">
+        <div class="hidden"><h1>Thames River Anglers Association</h1></div>
+        <div class="logoCon">
+            <a href="#main"> <img src="images/traa-logo.svg" alt="Thames River Anglers Association Logo" width="100" height="150" class="sticky-tl"></a>
+        </div>
+    <nav class="navCon">
+        <ul id="siteNav">
+            <li class="navItem"><a href="#main">        Home      </a></li>
+            <li class="navItem"><a href="#aboutCon">    About     </a></li>
+            <li class="navItem"><a href="#articleCon">  Events    </a></li>
+            <li class="navItem"><a href="#projectsCon"> Projects  </a></li>
+            <li class="navItem"><a href="#footerCon">   Links     </a></li>
+            <li class="navItem"><a href="#contactUsCon">Contact Us</a></li>
+            <li>
+                <ul class="socialMedia">
+                    <li><a target="_blank" href="https://www.facebook.com/groups/4TRAA/">                   <img src="images/icon-fb.png" class="socialMediaIco" width="25" height="25" alt="facebook"></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCSuwqQ-HzLQw-gylALz5YkA"> <img src="images/icon-yt.png" class="socialMediaIco" width="25" height="25" alt="youtube"></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/?hl=en">                         <img src="images/icon-ig.png" class="socialMediaIco" width="25" height="25" alt="instagram"></a></li>
+                    <li><a target="_blank" href="https://twitter.com/">                                     <img src="images/icon-tw.png" class="socialMediaIco" width="25" height="25" alt="twitter"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <button id="closeHead">X</button>
+</header>
+    
+<!-- main page -->
+    <section class="grid mainCon" id="main">
+
+    <h2 class="hidden">Homepage</h2>
+<!-- hero img -->
+    <picture>
+        <source srcset="images/river-small.jpg"  class="heroImage" media="(min-width: 320px)">    
+        <source srcset="images/river-medium.jpg"  class="heroImage" media="(min-width: 430px)">    
+        <source srcset="images/river-large.jpg"  class="heroImage" media="(min-width: 1440px)">    
+        <img src="images/river-large.jpg"  class="heroImage" alt="Thames River">    
+    </picture>
 <!-- 
     Learn how to embed responsive imgs
     https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
  -->
-    <img src="traa-logo.svg" alt="Thames River Anglers Association Logo" width="100" height="100" class="sticky-tl">
-    <nav id="navCon" class="gridCon sticky-tr">
-            <ul id="siteNav">
-                <li class="navItem"><a href="#main">        Home      </a></li>
-                <li class="navItem"><a href="#aboutCon">    About     </a></li>
-                <li class="navItem"><a href="#articleCon">  Events    </a></li>
-                <li class="navItem"><a href="#projectsCon"> Projects  </a></li>
-                <li class="navItem"><a href="#footerCon">   Links     </a></li>
-                <li class="navItem"><a href="#contactUsCon">Contact Us</a></li>
-                <li>
-                    <ul class="socialMedia">
-                        <li><a target="_blank" href="https://www.facebook.com/groups/4TRAA/">                   <img src="images/icon-fb.png" class="socialMediaIco" width="100" height="100" alt="facebook"></a></li>
-                        <li><a target="_blank" href="https://www.youtube.com/channel/UCSuwqQ-HzLQw-gylALz5YkA"> <img src="images/icon-yt.png" class="socialMediaIco" width="100" height="100" alt="youtube"></a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/?hl=en">                         <img src="images/icon-ig.png" class="socialMediaIco" width="100" height="100" alt="instagram"></a></li>
-                        <li><a target="_blank" href="https://twitter.com/">                                     <img src="images/icon-tw.png" class="socialMediaIco" width="100" height="100" alt="instagram"></a></li>
-                    </ul>
-                </li>
-            </ul>
-    </nav>
-    <div class="blockQuoteBg">
-        <p id="blockQuoteMain">Dedication Today For A Better Tomorrow</p>
+
+    <div id="blockQuoteCon">
+        <p id="blockQuoteText">Dedication Today For A Better Tomorrow</p>
     </div>
 
     <div class="button-sm">
@@ -48,7 +63,11 @@
             Membership Call to action button will open pop out modal box
          -->
     </div>
+    </section>
+
     <!-- Modal Popout Content -->
+
+<!--     
     <section>
         <h3>Be a part of the solution, become a member of the Thames River Anglers Association for only $25.</h3>
     
@@ -61,9 +80,12 @@
         </p>
         <p> To join, attend a TRAA event or email us for other options. </p>
         <div class="close button-med" onclick="closeModal()"><a href="#contactUs">Tell Me More</a></div>
-    </section>
+    </section> -->
 
     <!--END Modal Popout Content -->
+
+
+    <section class="grid">
     <h2 class="hidden" id="mission">Our Mission</h2>
 
         <p>Our Story</p>
@@ -84,12 +106,13 @@
         <div>
             <a href="#events">Learn More</a>
         </div>
-
+    </section>
 <!-- Scroll Back to top -->
     <div class="sticky-lr"> 
         <!-- <img><a href="#main"></a> -->
     </div>
 
+    <section class="grid">
 
     <h2 id="events">Events</h2>
         <h3 class="articleTitle">Rod Building - Your First Time </h3>
@@ -114,6 +137,10 @@
         <h3>Come and talk to us at a TRAA General Meeting, Guests are Welcome!</h3>
             <p>The TRAA meets every second Wednesday of each month. We always try to get the meetings started by 7:00pm so try to be there a few minutes beforehand. The venue is the Western Ontario Fish & Game Protective Association's clubhouse located just east of the Dearness Home on Southdale Road (East), on the North side of Southdale Road.
                 <p> The address is 790 Southdale Road East, London, Ontario. </p>
+    
+    </section>
+
+                
     <h2 class="projectsTitle" id="projects">
         <a href="#projects">
         <span class="projectsTitleBg">Fundraising efforts are underway to get the funds we need</span>
@@ -137,8 +164,8 @@
         </a>
     </div>
 
-    
-    <section class="gridCon contactCon">
+<!--     
+    <section class="grid contactCon">
     <h2 id="contact">Contact Us</h2>
 
         <div class="formCon">
@@ -154,7 +181,7 @@
             </form>
         </div>
 
-    </section>
+    </section> -->
         
         <h2 id="sponserHeader"  >Local Businesses Step Up to Help Out the TRAA</h2>
         <div id="sponserLogoCon">
@@ -183,6 +210,5 @@
     </footer>
 </div>
     <script src="js/main.js"></script>
-    </div>
 </body>
 </html>
