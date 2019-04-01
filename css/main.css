@@ -44,50 +44,130 @@ body
 
 }
 
-#container
+
+.grid
 {
     display: grid;
-    grid-template-columns: repeat(4,25%);
-    grid-template-rows: repeat(20,100vh)
-
+    grid-template-columns: repeat(4,25vw);
+    grid-template-rows: repeat(20,25vh);
 }
-
 
 .header
 {
     grid-row: 1;
     grid-column: 1/-1;
-    z-index: 100;
+    z-index: 20;
+    display: flex;
+    max-width: 100vw;
+}
+
+.menu
+{
+    grid-row: 1/5;
+    grid-column: 1/-1;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
+    /* flex-basis: 100%; */
+    padding: 1vh 2vw;
+    background-color: #fffef0;
+    padding-top: 25vh
 }
 
 .logoCon
 {
-    background-color: rgb(212, 34, 34, 0.6);
-    margin-left: 4vw
+    padding: 1vh 2vw;
+
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
 }   
 
-.navCon
+.logo
 {
-    height: 100vh;
-    background-color: rgb(33, 33, 33, .6);
+    width: 120%;
+    height: 120%;
+
+}
+
+#btnToggle
+{
+    height: 25px;
+    width: 25px;
+    margin: 6% 10%;
+    order: 2;    /* background-image: src() */
+}
+
+.navCon
+{   
+    height: auto;
+    width: 100vw;
+    /* background-color: rgb(33, 33, 33, .6); */
+    order: 3;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    justify-content: stretch;
+}
+
+#siteNav
+{
+    padding-bottom: 100px;
+    margin-right: 50px;
+}
+
+#siteNav li
+{
+    margin-bottom: 22px;
+    color: white;
+    text-align: right;
+
+}
+
+.navItem a
+{
+    color: black;
+    text-decoration: none;
+    padding: 1px;
+    border-bottom: #78d0f2 .2em solid;
+}
+
+
+.navItem a:visited
+{
+    color: black;
+    border-bottom: #78d0f2;
+}
+
+.navItem a:hover
+{
+    background-color: #78d0f2
 }
 
 .socialMedia
 {
+    order: 4;
+    width: 90%;
     display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    border-top: #78d0f2 .5px solid;
 
 }
 
 .socialMediaIco
 {
-    background-color: rgba(4, 255, 255, 0.883);
-    justify-content: space-between;
+ margin: auto;
+ margin-top: 30px;
+
 }
+
+
+
 .mainCon
 {
-    grid-row: 1;
+    grid-row: 1/5;
     grid-column: 1/-1;
     height: 100vh;
     margin: 30%;
@@ -96,7 +176,8 @@ body
 
 .heroImage
 {
-    grid-row: 1/-1;
+
+    grid-row: 1/5;
     grid-column: 1/-1;
     max-width: 100vw;
     overflow: hidden;
@@ -166,18 +247,6 @@ body
 }
 
 
-
-
-/* 
-#main
-{
-    
-}
-
-#navCon
-{
-
-}
 
 #siteNav
 {

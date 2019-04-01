@@ -10,12 +10,16 @@
     <title>Thames River Anglers Association</title>
 </head>
 <body>
-<div id="container">
+<div class="grid">
 <header class="header">
-        <div class="hidden"><h1>Thames River Anglers Association</h1></div>
-        <div class="logoCon">
-            <a href="#main"> <img src="images/traa-logo.svg" alt="Thames River Anglers Association Logo" width="100" height="150" class="sticky-tl"></a>
-        </div>
+    <div class="hidden"><h1>Thames River Anglers Association</h1></div>
+    <div class="logoCon">
+        <a href="#main"><img src="images/traa-logo.svg" alt="Thames River Anglers Association Logo" width="200" height="200" class="logo sticky-tl"></a>
+    </div>
+    <button id="btnToggle"></button>
+</header>
+<div class="menu">
+    <h2 class="hidden">Site Navigation</h2>    
     <nav class="navCon">
         <ul id="siteNav">
             <li class="navItem"><a href="#main">        Home      </a></li>
@@ -23,19 +27,17 @@
             <li class="navItem"><a href="#articleCon">  Events    </a></li>
             <li class="navItem"><a href="#projectsCon"> Projects  </a></li>
             <li class="navItem"><a href="#footerCon">   Links     </a></li>
-            <li class="navItem"><a href="#contactUsCon">Contact Us</a></li>
-            <li>
-                <ul class="socialMedia">
-                    <li><a target="_blank" href="https://www.facebook.com/groups/4TRAA/">                   <img src="images/icon-fb.png" class="socialMediaIco" width="25" height="25" alt="facebook"></a></li>
-                    <li><a target="_blank" href="https://www.youtube.com/channel/UCSuwqQ-HzLQw-gylALz5YkA"> <img src="images/icon-yt.png" class="socialMediaIco" width="25" height="25" alt="youtube"></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/?hl=en">                         <img src="images/icon-ig.png" class="socialMediaIco" width="25" height="25" alt="instagram"></a></li>
-                    <li><a target="_blank" href="https://twitter.com/">                                     <img src="images/icon-tw.png" class="socialMediaIco" width="25" height="25" alt="twitter"></a></li>
-                </ul>
-            </li>
+            <li class="navItem"><a href="#contactCon">  Contact Us</a></li>
+        </ul>
+        <ul class="socialMedia">
+            <li class="socialMediaIco"><a target="_blank" href="https://www.facebook.com/groups/4TRAA/">                   <img src="images/icon-fb.png" width="30" height="30" alt="facebook"></a></li>
+            <li class="socialMediaIco"><a target="_blank" href="https://www.youtube.com/channel/UCSuwqQ-HzLQw-gylALz5YkA"> <img src="images/icon-yt.png" width="30" height="30" alt="youtube"></a></li>
+            <li class="socialMediaIco"><a target="_blank" href="https://www.instagram.com/?hl=en">                         <img src="images/icon-ig.png" width="30" height="30" alt="instagram"></a></li>
+            <li class="socialMediaIco"><a target="_blank" href="https://twitter.com/">                                     <img src="images/icon-tw.png" width="30" height="30" alt="twitter"></a></li>
         </ul>
     </nav>
-    <button id="closeHead">X</button>
-</header>
+
+</div>
     
 <!-- main page -->
     <section class="grid mainCon" id="main">
@@ -83,7 +85,6 @@
     </section> -->
 
     <!--END Modal Popout Content -->
-
 
     <section class="grid">
     <h2 class="hidden" id="mission">Our Mission</h2>
@@ -166,7 +167,7 @@
 
 <!--     
     <section class="grid contactCon">
-    <h2 id="contact">Contact Us</h2>
+    <h2 id="contactCon">Contact Us</h2>
 
         <div class="formCon">
             <p>If you're with a like-minded organization or group looking for more information on the TRAA and its activities or if you're an individual who would like to get involved with the activities undertaken by the TRAA.
@@ -208,7 +209,9 @@
             <li><a href="">Links</a></li>
         </ul>
     </footer>
+
 </div>
     <script src="js/main.js"></script>
 </body>
 </html>
+
