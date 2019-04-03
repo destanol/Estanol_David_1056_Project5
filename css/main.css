@@ -33,6 +33,21 @@
     overflow:hidden;
 }
 
+.boxShadow
+{
+   box-shadow: 0px 0px 23px 2px rgba(0,0,0,0.38);
+}
+
+.boxShadowLow
+{
+   box-shadow: 10px 10px 95px -43px rgba(0,0,0,0.29);
+}
+
+.boxShadowUpper
+{
+   box-shadow: 0px 11px 291px -43px rgba(0,0,0,0.4);
+}
+
 body
 {
     /* display: flex;
@@ -50,6 +65,7 @@ body
     display: grid;
     grid-template-columns: repeat(4,25vw);
     grid-template-rows: repeat(20,25vh);
+    max-width: 100vw
 }
 
 .header
@@ -59,6 +75,7 @@ body
     z-index: 20;
     display: flex;
     max-width: 100vw;
+
 }
 
 .menu
@@ -93,10 +110,10 @@ body
 
 #btnToggle
 {
-    height: 25px;
-    width: 25px;
-    margin: 6% 10%;
-    order: 2;    /* background-image: src() */
+    height: 35px;
+    width: 35px;
+    margin: 6%;
+        order: 2;    /* background-image: src() */
 }
 
 .navCon
@@ -170,34 +187,111 @@ body
     grid-row: 1/5;
     grid-column: 1/-1;
     height: 100vh;
-    margin: 30%;
-
 }
 
 .heroImage
 {
 
-    grid-row: 1/5;
-    grid-column: 1/-1;
-    max-width: 100vw;
+    height: 100vh;
+    width: auto;
     overflow: hidden;
     /* height: 100%; */
 }
-#blockQuoteCon
+.heroQuote
 {
-    grid-column: 1/-1;
-    grid-row: 3;
-    z-index: 20;
+    grid-column: 1/4;
+    grid-row: 2/4;
+    z-index: 30;
+    line-height: 2rem;
+    margin-left: 20%;
+    font-weight: 800;
+    font-size: 1.5rem;
+    /* letter-spacing: 1px; */
+    color: #fffef0;
+    padding:18px;
+    padding-right: 30px;
+    align-self: center;
+    background-color: rgba(69, 96, 170, 0.116);
+    width: 120px;
+    text-align: right;
 }
+
+/* ABOUT SECTION */
+
+.missionStatement
+{
+    grid-row: 3/5;
+    grid-column: 2/-1;
+    z-index: 10;
+    justify-self: center;
+    align-self: center;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-right: 20%;
+}
+
+.msBg
+{
+    background-color: rgba(120,208,242,0.11);
+    color: #fffef0;
+    font-weight: 400;
+    padding: 15px;
+    padding-top: 20px;
+    /* text-indent: -.2rem; */
+    line-height: 1.2rem;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    width: 176px;
+}
+
+.missionCon
+{
+    background-color: rgba(255, 123, 0, 0.8);
+    grid-row: 5/10;
+    height: 100vh;
+    grid-column: 1/-1;
+}
+
+.missionCon p
+{
+grid-row: 1/ 3;
+grid-column: 1/3;
+align-self: center;
+
+}
+
+#missionBtn
+
+{
+    grid-row: 3/5;
+    grid-column: 1/3;
+    justify-self: end;
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /*CONTACT STYLIN' */
 
 .contactCon
 {
-    grid-row: 1/-1;
+    /* grid-row: 1/-1; */
     grid-column: 1/-1;
     height: 100vh;
+    
 }
 
 #contact
@@ -215,20 +309,12 @@ body
     justify-content: center;
 }
 
-
-.grid
-{
-    width: 100vw;
-    display:grid;
-    grid-template-columns: repeat(4, 1fr)
-
-}
-
 .formCon
 {
     width: 100vw;
     grid-row: 2;
 }
+
 .formCon *
 {
     display: flex;
@@ -245,26 +331,3 @@ body
     border-bottom: 2px solid #78d0f2;
     width: 90vw;
 }
-
-
-
-#siteNav
-{
-
-}
-
-.socialMedia
-{
-
-}
-
-#missionStatement
-{
-
-}
-
-#missionStatementBg
-{
-
-}
- */

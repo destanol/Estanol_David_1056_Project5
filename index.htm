@@ -18,7 +18,7 @@
     </div>
     <button id="btnToggle"></button>
 </header>
-<div class="menu">
+<div class="menu hidden">
     <h2 class="hidden">Site Navigation</h2>    
     <nav class="navCon">
         <ul id="siteNav">
@@ -40,24 +40,26 @@
 </div>
     
 <!-- main page -->
-    <section class="grid mainCon" id="main">
+    <section class="mainCon grid" id="main">
 
     <h2 class="hidden">Homepage</h2>
 <!-- hero img -->
+    <div id="heroImgCon">
     <picture>
-        <source srcset="images/river-small.jpg"  class="heroImage" media="(min-width: 320px)">    
-        <source srcset="images/river-medium.jpg"  class="heroImage" media="(min-width: 430px)">    
-        <source srcset="images/river-large.jpg"  class="heroImage" media="(min-width: 1440px)">    
+        <source srcset="images/river-small.jpg"  class="heroImage" media="(max-width: 320px)">    
+        <source srcset="images/river-medium.jpg"  class="heroImage" media="(max-width: 430px)">    
+        <source srcset="images/river-large.jpg"  class="heroImage" media="(max-width: 1440px)">    
         <img src="images/river-large.jpg"  class="heroImage" alt="Thames River">    
     </picture>
+    </div>
 <!-- 
+    use css bg image
+
     Learn how to embed responsive imgs
     https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
  -->
-
-    <div id="blockQuoteCon">
-        <p id="blockQuoteText">Dedication Today For A Better Tomorrow</p>
-    </div>
+      
+    <span class="heroQuote boxShadow">Dedication Today For A Better Tomorrow</span>    
 
     <div class="button-sm">
         <!-- <img src="" alt="" width="" height=""> -->
@@ -85,26 +87,21 @@
     </section> -->
 
     <!--END Modal Popout Content -->
-
-    <section class="grid">
-    <h2 class="hidden" id="mission">Our Mission</h2>
-
-        <p>Our Story</p>
-        <div class="missionStatement" >
-            <span class="msBg">"For the enhancement, protection and</span>	
-            <span class="msBg">promotion of a viable, multi-species fishery </span> 
-            <span class="msBg">within the Thames Riverwaters.”</span> 
-        </div>
+    
+    <div class="missionStatement ">
+        <span class="msBg boxShadow">For the enhancement, protection and promotion of a viable, multi-species fishery within the Thames Riverwaters.</span> 
+    </div>
+    <section class="grid missionCon">
+    <h2  id="mission" class="hidden">Our Mission</h2>
 
         <!-- <video src=""></video> -->
-
         <p>              
             The TRAA is not a fishing club, although most members are anglers and share 
             fishing as a common interest. We are a "hands on" environmental group who 
             likes to work at a grass roots level.
         </p>
 
-        <div>
+        <div id="missionBtn">
             <a href="#events">Learn More</a>
         </div>
     </section>
@@ -137,8 +134,7 @@
             
         <h3>Come and talk to us at a TRAA General Meeting, Guests are Welcome!</h3>
             <p>The TRAA meets every second Wednesday of each month. We always try to get the meetings started by 7:00pm so try to be there a few minutes beforehand. The venue is the Western Ontario Fish & Game Protective Association's clubhouse located just east of the Dearness Home on Southdale Road (East), on the North side of Southdale Road.
-                <p> The address is 790 Southdale Road East, London, Ontario. </p>
-    
+            <p> The address is 790 Southdale Road East, London, Ontario. </p>
     </section>
 
                 
