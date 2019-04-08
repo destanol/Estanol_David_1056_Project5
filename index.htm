@@ -11,16 +11,9 @@
 </head>
 <body>
 <div class="grid">
-<header class="header">
-    <div class="hidden"><h1>Thames River Anglers Association</h1></div>
-    <div class="logoCon">
-        <a href="#main"><img src="images/traa-logo.svg" alt="Thames River Anglers Association Logo" width="200" height="200" class="logo sticky-tl"></a>
-    </div>
-    <button id="btnToggle"></button>
-</header>
-<div class="menu hidden">
-    <h2 class="hidden">Site Navigation</h2>    
-    <nav class="navCon">
+<header class="header grid">
+    <nav class="menu hidden">
+            <h2 class="hidden">Site Navigation</h2>    
         <ul id="siteNav">
             <li class="navItem"><a href="#main">        Home      </a></li>
             <li class="navItem"><a href="#aboutCon">    About     </a></li>
@@ -36,8 +29,13 @@
             <li class="socialMediaIco"><a target="_blank" href="https://twitter.com/">                                     <img src="images/icon-tw.png" width="30" height="30" alt="twitter"></a></li>
         </ul>
     </nav>
+    <div class="hidden"><h1>Thames River Anglers Association</h1></div>
+    <div class="logoCon">
+        <a href="#main"><img src="images/traa-logo.svg" alt="Thames River Anglers Association Logo" width="200" height="200" class="logo sticky-tl"></a>
+    </div>
+    <button id="btnToggle"></button>
 
-</div>
+</header>
     
 <!-- main page -->
     <section class="mainCon grid" id="main">
@@ -58,9 +56,10 @@
     Learn how to embed responsive imgs
     https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
  -->
-      
-    <span class="heroQuote boxShadow">Dedication Today For A Better Tomorrow</span>    
 
+    <div class="heroQuoteCon boxShadow">
+        <span class="heroQuote ">Dedication Today For A Better Tomorrow</span>    
+    </div>
     <div class="button-sm">
         <!-- <img src="" alt="" width="" height=""> -->
         <!--  
@@ -68,7 +67,8 @@
          -->
     </div>
     </section>
-
+    <div class="ctaBtn">
+    </div>
     <!-- Modal Popout Content -->
 
 <!--     
@@ -88,8 +88,8 @@
 
     <!--END Modal Popout Content -->
     
-    <div class="missionStatement ">
-        <span class="msBg boxShadow">For the enhancement, protection and promotion of a viable, multi-species fishery within the Thames Riverwaters.</span> 
+    <div class="missionStatementCon boxShadow">
+        <span class="missionStatement ">For the enhancement, protection and promotion of a viable, multi-species fishery within the Thames Riverwaters.</span> 
     </div>
     <section class="grid missionCon">
     <h2  id="mission" class="hidden">Our Mission</h2>
@@ -105,8 +105,8 @@
         <img src="images/action.JPG" id="missionMedia" alt="boats on the thames river" height="180" width="307">
         <!-- <picture id="missionMedia">
         </picture> -->
-        <div id="missionBtn">
-            <a href="#events">Learn More</a>
+        <div class="missionBtnCon">
+            <a href="#events" class="button missionBtn">Learn More</a>
         </div>
     </section>
 <!-- Scroll Back to top -->
@@ -114,7 +114,7 @@
         <!-- <img><a href="#main"></a> -->
     </div>
 
-    <section class="grid eventCon">
+    <section class="grid eventCon" id="events">
         <h2 id="eventHeader">Events</h2>
         <h3 class="articleTitle centre">Rod Building - Your First Time </h3>
         <span class="articleSubhead centre">7:00PM - Mondays, February 18 through March 11, 2019</span>
@@ -133,7 +133,7 @@
             </p>
         </div>
 
-        <div class="viewMoreArc button-med"><a href="#map">View More</a></div>
+        <div class="viewMoreArt"><a href="#map" class="button">View More</a></div>
         
         <aside id="articleFeed">
             
@@ -149,39 +149,42 @@
             </div>
         </aside>
     </section>
-    <section class="location grid">
-        <h2 class="locationHeader">Find Us</h2>
-        <iframe id="locationMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2065.127125662328!2d-81.22002897702677!3d42.94601771960088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef3b01c9e9983%3A0x84558efdb9f3a3a1!2s790+Southdale+Rd+E%2C+London%2C+ON+N6E+1A8!5e0!3m2!1sen!2sca!4v1553643732021" width="600" height="450" style="border:0" allowfullscreen></iframe>    
+    <section class="location grid" id="map">
+        <a href="#locationMap" class="locationHeader">
+            <h2 >Find Our Location</h2>
+        </a>
+        <iframe id="locationMap" class="boxShadowUpper" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2065.127125662328!2d-81.22002897702677!3d42.94601771960088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef3b01c9e9983%3A0x84558efdb9f3a3a1!2s790+Southdale+Rd+E%2C+London%2C+ON+N6E+1A8!5e0!3m2!1sen!2sca!4v1553643732021" width="600" height="450" style="border:0" allowfullscreen></iframe>    
         <h3>Come and talk to us at a TRAA General Meeting, Guests are Welcome!</h3>
-        <p>The TRAA meets every second Wednesday of each month. We always try to get the meetings started by 7:00pm so try to be there a few minutes beforehand. The venue is the Western Ontario Fish & Game Protective Association's clubhouse located just east of the Dearness Home on Southdale Road (East), on the North side of Southdale Road.
-        <p> The address is 790 Southdale Road East, London, Ontario. </p>
+        <div id="locationText">
+            <p>The TRAA meets every second Wednesday of each month. We always try to get the meetings started by 7:00pm so try to be there a few minutes beforehand. The venue is the Western Ontario Fish & Game Protective Association's clubhouse located just east of the Dearness Home on Southdale Road (East), on the North side of Southdale Road.
+            <p> The address is 790 Southdale Road East, London, Ontario. </p>
+        </div>
     </section> 
-    <section class="projects">
-        <h2 class="projectsTitle">
-            <a href="#projects">
-            <span class="projectsTitleBg">Fundraising efforts are underway to get the funds we need</span>
-            <span class="projectsTitleBg">to continue many of the TRAA's most vital projects.</span>
-            </a>    
-        </h2>
-            
+    <section class="projects grid boxShadowUpper">
+        <h2 class="hidden">Projects</h2>
+        <div id="projectHeader">
+            <span class="projectsTitleBg">Fundraising efforts are underway to get the funds we need to continue many of the TRAA's most vital projects.</span>
+        </div>
         <img src="images/river-project.jpg" width="900" height="519" id="projectImg" alt="fishermen tagging fish">
-        <h2 class="hidden">The TRAA Salmonid Monitoring Program</h2>
+        <h3>The TRAA Salmonid Monitoring Program</h3>
         <p>
             Jon George, a marine biologist from Thunder Bay
             who is helping us out with this project, compiled
             the comparative results of the first three years of 
             a seven year long survey, in an easy-to-understand report. 
         </p>
-        <img src="images/view-hook.png" id="viewMoreArr" alt="view more" width="322" height="454"> 
-        <p id="viewMoreBtn"> View Projects</p> 
-        <div id="donate">
-            <a href="#contactUs">
-            <span  id="donateBtn" class="button"> Donate Today</span>
+        <div id="viewMoreBtn">
+            <a href="#contactCon" class="button">
+            <img src="images/view-hook.png" id="viewMoreArr" alt="view more" width="454" height="322"> 
+            <span>View Projects</span> 
             </a>
+        </div>
+        <div id="donate">
+            <span  id="donateBtn" ><a href="#contactCon" class="button"> Donate Today</a></span>
         </div>
     </section>
     
-    <section class="grid contactCon">
+    <section class="contactCon">
     <h2 id="contactCon">Contact Us</h2>
         <div class="formCon">
             <p>If you're with a like-minded organization or group looking for more information on the TRAA and its activities or if you're an individual who would like to get involved with the activities undertaken by the TRAA.
@@ -197,7 +200,7 @@
         </div>
 
     </section>
-        
+    <section  class=" grid sponserCon">
         <h2 id="sponserHeader"  >Local Businesses Step Up to Help Out the TRAA</h2>
         <div id="sponserLogoCon">
             <a href="https://www.melchersconstruction.com/"> <img class="sponserLogo" src="images/logo-melchers.png"             width="300" height="100" alt="Melchers Construction Limited">   </a>
@@ -206,9 +209,8 @@
             <a href="https://anglingsports.ca/"> <img class="sponserLogo" src="images/logo-angling-sports-2018.png"  width="300" height="100" alt="Angling Sports">  </a>
             <a href="https://www.guillevingreentech.com/"> <img class="sponserLogo" src="images/logo-guilleving-green-tech.png" width="300" height="100" alt="Guilleving Green Tech">   </a>
         </div>
-
-
-        <footer id="footerCon">
+    </section>
+    <footer id="footerCon" class="grid">
         <ul>
             <li><a href="#contactUsCon">Contact</a></li>
             <li>90 Southdale Road East, London, Ontario</li>
