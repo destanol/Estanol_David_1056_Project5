@@ -67,7 +67,7 @@
          -->
     </div>
     </section>
-    <div class="ctaBtn">
+    <div class="ctaBtn boxShadow">
     </div>
     <!-- Modal Popout Content -->
 
@@ -143,7 +143,7 @@
                 <div id="subArticleText">    
                     <h5>TRAA Trout Hatchery</h5>
                     <p>Brown Trout Eggs Arriving Soon!</p>
-                    <p class="subArticle "><a href="#map">View More</a></p>
+                    <p class="subArticle "><a href="#map">View More ></a></p>
 
                 </div>
             </div>
@@ -174,43 +174,41 @@
             a seven year long survey, in an easy-to-understand report. 
         </p>
         <div id="viewMoreBtn">
-            <a href="#contactCon" class="button">
+            <a href="#contactHeader" class="button">
             <img src="images/view-hook.png" id="viewMoreArr" alt="view more" width="454" height="322"> 
             <span>View Projects</span> 
             </a>
         </div>
         <div id="donate">
-            <span  id="donateBtn" ><a href="#contactCon" class="button"> Donate Today</a></span>
+            <span  id="donateBtn" ><a href="#contactHeader" class="button"> Donate Today</a></span>
         </div>
     </section>
     
-    <section class="contactCon">
-    <h2 id="contactCon">Contact Us</h2>
-        <div class="formCon">
-            <p>If you're with a like-minded organization or group looking for more information on the TRAA and its activities or if you're an individual who would like to get involved with the activities undertaken by the TRAA.
-            </p>
-            <span id="welcome">The TRAA would like to hear from you!</span>
+    <section class="contactCon grid">
+    <h2 id="contactHeader">Contact Us</h2>
+    <p>If you're with a like-minded organization or group looking for more information on the TRAA and its activities or if you're an individual who would like to get involved with the activities undertaken by the TRAA.
+    </p>
+    <span id="welcome">The TRAA would like to hear from you!</span>
             <form action="php" autocomplete="off" method="post">
                 <input    class="formInput" id="name" type="text" name="fullname" placeholder="Name" >
-                <input    class="formInput" id="subject" type="text" name="subject" placeholder="Subject" required>
-                <textarea class="formInput" id="message" name="message" placeholder="Leave a message" required></textarea>
+                <input    class="formInput" id="subject" type="text" name="subject" placeholder="Subject" >
+                <textarea class="formInput" id="message" name="message" placeholder="Leave a message" ></textarea>
                 <input    class="formInput" id="email" type="email" name="email" placeholder="Email">
-                <input    class="formInput" id="submitBtn" type="submit" value="Submit">
+                <input    class="formInput boxShadowLow" id="submitBtn" type="submit" value="Submit">
             </form>
-        </div>
-
     </section>
     <section  class=" grid sponserCon">
         <h2 id="sponserHeader"  >Local Businesses Step Up to Help Out the TRAA</h2>
+        <p id="sponserSubhead">The support of the following local businesses is much appreciated</p>
         <div id="sponserLogoCon">
-            <a href="https://www.melchersconstruction.com/"> <img class="sponserLogo" src="images/logo-melchers.png"             width="300" height="100" alt="Melchers Construction Limited">   </a>
-            <a href="http://tryrecycling.com/"> <img class="sponserLogo" src="images/logo-try-recycling.png"        width="300" height="100" alt="Try Recycling Inc">   </a>
-            <a href="http://www.mumamanufacturing.com/"> <img class="sponserLogo" src="images/logo-muma.png"                 width="300" height="100" alt="Muma Manufacturing">  </a>
-            <a href="https://anglingsports.ca/"> <img class="sponserLogo" src="images/logo-angling-sports-2018.png"  width="300" height="100" alt="Angling Sports">  </a>
-            <a href="https://www.guillevingreentech.com/"> <img class="sponserLogo" src="images/logo-guilleving-green-tech.png" width="300" height="100" alt="Guilleving Green Tech">   </a>
+            <div class="sponserLogo"><a target="_blank" href="https://www.melchersconstruction.com/"> <img src="images/logo-melchers.png"              width="300" height="100" alt="Melchers Construction Limited"> </a></div>
+            <div class="sponserLogo"><a target="_blank" href="http://tryrecycling.com/">              <img src="images/logo-try-recycling.png"         width="300" height="100" alt="Try Recycling Inc">             </a></div>
+            <div class="sponserLogo"><a target="_blank" href="http://www.mumamanufacturing.com/">     <img src="images/logo-muma.png"                  width="300" height="100" alt="Muma Manufacturing">            </a></div>
+            <div class="sponserLogo"><a target="_blank" href="https://www.guillevingreentech.com/">   <img src="images/logo-guilleving-green-tech.png" width="300" height="100" alt="Guilleving Green Tech">         </a></div>
+            <div class="sponserLogo"><a target="_blank" href="https://anglingsports.ca/">             <img src="images/logo-angling-sports-2018.png"   width="300" height="100" alt="Angling Sports">                </a></div>
         </div>
     </section>
-    <footer id="footerCon" class="grid">
+    <footer id="footerCon" class="grid hidden">
         <ul>
             <li><a href="#contactUsCon">Contact</a></li>
             <li>90 Southdale Road East, London, Ontario</li>
