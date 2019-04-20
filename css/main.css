@@ -22,7 +22,7 @@
 
 .button
 {
-    color: #ff7777
+    color: #ff7777;
 }
 
 .hidden
@@ -86,9 +86,10 @@ body
 
 .header
 {
-    grid-row: 1/5;
+    grid-row: 1/-1;
     grid-column: 1/-1;
     z-index: 100;
+    position: fixed    
 }
 
 
@@ -100,9 +101,24 @@ body
     background-color: #fffef0;
     padding-top: 25vh;
     height: auto;
-    width: 100vw;
-    display: flex;
+    /* width: 100vw; */
+    display: none;
     flex-flow: column nowrap;
+}
+
+#btnToggle
+{
+    justify-self: end;
+    grid-column: 4;
+    grid-row: 1;
+    z-index: 12000;
+    height: 35px;
+    width: 35px;
+    margin: 5vh 7vw;
+    background: url(../images/menu.svg) center no-repeat;
+    border: none;
+    background-color: #fffef0;
+    cursor: pointer;
 }
 
 #siteNav
@@ -173,26 +189,23 @@ body
     
 }
 
-#btnToggle
-{
-    justify-self: end;
-    grid-column: 4;
-    grid-row: 1;
-    z-index: 12000;
-    height: 35px;
-    width: 35px;
-    margin: 5vh 7vw;
-    background: url(../images/menu.svg) center no-repeat;
-    border: none;
-}
-
-
 .mainCon
 {
     grid-row: 1/5;
     grid-column: 1/-1;
     height: 100vh;
     z-index: 5;
+}
+
+#heroImgCon
+{
+    background: url(../images/river-small.jpg) no-repeat center;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+
 }
 
 .heroImage
@@ -258,10 +271,9 @@ body
     height: 90px;
     align-self: center;
     justify-self: center;
-    margin:3vh 0 0 15vw;
-    border-radius:  5px 5px 0 0;
-    clip-path: polygon(0px 0px, 0px 80px, 10% 80%, 90px 7px, 100% 0%)}
-
+    margin:0 0 0 6vw;
+    border-radius:  5px;
+}
 /* ABOUT SECTION */
 
 .missionCon
@@ -632,7 +644,7 @@ padding: 6px;
     justify-self: end;
     align-self: center;
     align-items: center;
-    text-align: end;
+    /* text-align: end; */
     font-weight: 800;
     font-size: 1.6rem;
     padding:0 1rem;

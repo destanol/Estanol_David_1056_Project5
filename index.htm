@@ -12,7 +12,8 @@
 <body>
 <div class="grid">
 <header class="header grid">
-    <nav class="menu hidden">
+    <button id="btnToggle"></button>
+    <nav class="menu">
             <h2 class="hidden">Site Navigation</h2>    
         <ul id="siteNav">
             <li class="navItem"><a href="#main">        Home      </a></li>
@@ -33,7 +34,6 @@
     <div class="logoCon">
         <a href="#main"><img src="images/traa-logo.svg" alt="Thames River Anglers Association Logo" width="200" height="200" class="logo sticky-tl"></a>
     </div>
-    <button id="btnToggle"></button>
 
 </header>
     
@@ -43,35 +43,19 @@
     <h2 class="hidden">Homepage</h2>
 <!-- hero img -->
     <div id="heroImgCon">
-    <picture class="boxShadow">
-        <source srcset="images/river-small.jpg"  class="heroImage" media="(max-width: 320px)">    
-        <source srcset="images/river-medium.jpg"  class="heroImage" media="(max-width: 430px)">    
-        <source srcset="images/river-large.jpg"  class="heroImage" media="(max-width: 1440px)">    
-        <img src="images/river-large.jpg"  class="heroImage" alt="Thames River">    
-    </picture>
-    </div>
-<!-- 
-    use css bg image
-
-    Learn how to embed responsive imgs
-    https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
- -->
-
-    <div class="heroQuoteCon boxShadow">
+        </div>
+    
+<!-- large block quote -->
+        <div class="heroQuoteCon boxShadow">
         <span class="heroQuote ">Dedication Today For A Better Tomorrow</span>    
     </div>
-    <div class="button-sm">
-        <!-- <img src="" alt="" width="" height=""> -->
-        <!--  
-            Membership Call to action button will open pop out modal box
-         -->
-    </div>
     </section>
-    <div class="ctaBtn boxShadow">
-    </div>
-    <!-- Modal Popout Content -->
 
-<!--     
+    <div class="ctaBtn boxShadow">
+        </div>
+
+<!-- Modal Popout Content -->
+<!-- 
     <section>
         <h3>Be a part of the solution, become a member of the Thames River Anglers Association for only $25.</h3>
     
