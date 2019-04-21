@@ -6,18 +6,6 @@
     scroll-behavior: smooth;
 }
 
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-
-    
-    
-    
-    
-}
-
-
-
 /* Smartphones (portrait) DEFAULT ----------------- */ 
 
 .button
@@ -103,6 +91,8 @@ body
     padding-top: 25vh;
     display: none;
     flex-flow: column nowrap;
+    /* height: 100vh; */
+
 }
 
 #btnToggle
@@ -122,9 +112,7 @@ body
 
 #siteNav
 {
-    margin-right: 50px
-    
-    ;
+    margin-right: 50px;
 }
 
 #siteNav li
@@ -206,17 +194,9 @@ body
 
 #heroImgCon
 {
-    background: url(../images/river-small.jpg) no-repeat center;
-    grid-row: 1/-1;
-    grid-column: 1/-1;
-    height: 100vh;
-    width: auto;
-    overflow: hidden;
-
-}
-
-.heroImage
-{
+    background: url(../images/river-medium.jpg) no-repeat center;
+    background-size: cover;
+        grid-column: 1/-1;
     height: 100vh;
     width: auto;
     overflow: hidden;
@@ -542,7 +522,6 @@ padding: 6px;
 {
     grid-column: 1/-1;
     grid-row: 14/22;
-    /* background-image: url(../images/tex-worn_dots.png); */
     background-color: #fffef0;
     z-index:1 ;
 }
@@ -642,11 +621,11 @@ padding: 6px;
 
 #projectImg
 {
+    grid-column: 1/-1;
+    grid-row: 1/4;
     width: 90%;
     height: auto;
     z-index: 2;
-    grid-column: 1/-1;
-    grid-row: 1/4;
     align-self: center;
     margin-top:6vh;
 
@@ -757,25 +736,22 @@ padding: 6px;
 
 .contactCon
 {
-    /* grid-row: 1/-1; */
     grid-column: 1/-1;
     grid-row: 28/34;
     background-image: url(../images/tex-worn_dots.png);
-    /* z-index: -1; */
-
 }
 
 #contactHeader
 {
+    grid-row: 1;
+    grid-column: 1/-1;
     font-weight: 800;
     font-size: 2em;
     background-color: #78d0f2;
     color: #fffef0;
-    grid-row: 1;
     justify-self: center;
     height: 3.7rem;
     width:15rem;
-    grid-column: 1/-1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -827,10 +803,14 @@ form
     /* background-color: red; */
 }
 
+
 #message
 {
     height: 5rem;
 }
+
+
+
 
 #submitBtn
 {
@@ -909,3 +889,319 @@ form
     align-self: flex-end
 }
 
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+    html
+    {
+        font-size: 1.5rem
+    }
+
+    .grid
+    {
+        display: grid;
+        grid-template-columns: repeat(8,12.5vw);
+        grid-template-rows: repeat(38,20vh);
+        max-width: 100vw;
+    
+    }
+    
+    /* HEADER STYLES */
+    
+    .logoCon
+    {
+        grid-row: 1/3; 
+        grid-column: 1/3;
+        height: 177px;
+        width: 177px;
+        padding: 0;
+        margin: 50px 50px;
+    }   
+
+    #btnToggle
+    {
+        grid-column: 8;
+        grid-row: 1;
+        justify-self: center;
+        align-self: end;
+        width: 50px;
+        height:50px;
+    }
+
+    .menu
+    {
+        grid-row: 1/6;
+        grid-column: -1/6;
+    }
+    
+    /* MAIN SECTION STYLES */
+    #heroImgCon
+    {
+        background: url(../images/river-large.jpg) no-repeat center;
+    }
+    
+.heroQuoteCon
+{
+    grid-column: 2;
+    grid-row: 2/4;
+    z-index: 30;
+    color: #fffef0;
+    padding: .6rem 1rem;
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(69, 96, 170, 0.116);
+    border-radius:  5px;
+}
+
+.missionStatementCon
+{
+    grid-row: 3/5;
+    grid-column: 2/-1;
+    z-index: 10;
+    justify-self: start;
+    align-self: center;
+    max-width: 200px;
+    padding: 13px 10px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgba(120,208,242,0.11);
+    border-radius:  5px;
+}
+.ctaBtnCon
+{
+    background-color: rgb(255, 119, 119, 0.50);
+    grid-column: 3/-1;
+    grid-row: 2/4;
+    z-index: 10;
+    width: 90px;
+    height: 90px;
+    align-self: center;
+    justify-self: center;
+    margin:0 0 0 6vw;
+    border-radius:  5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ctaBtn
+{
+    width: auto;
+    height: 60%;
+}
+
+/* ABOUT SECTION */
+
+.missionCon
+{
+    grid-row: 6/12;
+    height: 100vh;
+}
+
+.missionCon p
+{
+    grid-row: 1/ 3;
+    grid-column: 1/-1;
+    align-self: center;
+}
+
+.missionBtnCon
+
+{
+    grid-row:3;
+    grid-column: 1/-1;
+}
+
+#missionMedia
+{
+    grid-column: 1/-1;
+    grid-row: 4;
+    align-self: center;
+    /* justify-self: end; */
+    width: 100%;
+    height: auto;
+}
+
+/* EVENT SECTION STYLIN'  */
+
+.eventCon
+{
+    grid-column: 1/-1;
+    grid-row: 9/14;
+    z-index: 2;
+}
+
+#eventHeader
+{
+    grid-row: 1;
+    grid-column: 1/-1;
+
+}
+
+.articleTitle
+{
+    grid-row: 1;
+    grid-column: 1/-1;
+    align-self: start;
+    margin-top: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.articleSubhead
+{
+    grid-column: 1/-1;
+    grid-row: 2;
+}
+
+
+#articleText
+{
+    grid-column: 1/-1;
+    grid-row: 2/5;
+    margin-top: 8vh;
+    padding: 20px 12px;
+}
+
+.viewMoreArt
+{
+    grid-column: 1/-1;
+    grid-row: 4;
+}
+
+#articleFeed
+{
+    grid-row: 5/6;
+    grid-column: 1/-1;
+}
+
+/* MAP LOCATION STYLING */
+
+.location
+{
+    grid-column: 1/-1;
+    grid-row: 14/22;
+    background-color: #fffef0;
+    z-index:1 ;
+}
+
+.locationHeader
+{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+
+#locationMap
+{
+    grid-column: 1/-1;
+    grid-row: 2/5;
+}
+
+.location h3
+{
+    grid-column:1/-1;
+    grid-row: 5/6;
+}
+
+#locationText
+{
+    grid-column: 1/-1;
+    grid-row: 6/-1;
+}
+
+.projects
+{
+    grid-row: 21/28;
+
+}
+
+#projectImg
+{
+    grid-column: 1/-1;
+    grid-row: 1/4;
+}
+
+.projects h3
+{
+    grid-column:3/-1;
+    grid-row: 2/5;
+}
+
+.projects p
+{
+    grid-column: 1/4;
+    grid-row: 4;
+}
+
+#viewMoreBtn
+{
+    grid-column: 2/-1;
+    grid-row: 5/7;
+}
+
+#donate
+{
+    grid-row: 7;
+    grid-column: 1/-1;
+}
+
+/*CONTACT STYLIN' */
+
+.contactCon
+{
+    grid-column: 1/-1;
+    grid-row: 28/34;
+}
+
+#contactHeader
+{
+    grid-row: 1;
+    grid-column: 1/-1;
+}
+
+.contactCon p
+{
+    grid-column: 1/-1;
+    grid-row: 1/3;
+
+}
+
+form
+{
+    grid-row: 3/6;
+    grid-column: 1/-1;
+
+}
+
+.sponserCon
+{
+    grid-column: 1/-1;
+    grid-row: 33/39;
+    background-color: #fff;
+} 
+
+.sponserCon *
+{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+#sponserLogoCon
+{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100vw;
+    grid-row: 2/6;
+    align-self: center;
+}
+.sponserLogo *
+{
+    width: 90%;
+    height: auto;
+}
+
+}
