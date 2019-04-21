@@ -1,13 +1,13 @@
 
 var toggle = document.querySelector('#btnToggle');
 var menu = document.querySelector('.menu');
+var menuItem = document.querySelector('.menu');
+// var navHeight = document.querySelector('.')1
 
 
 function openNav() {
   menu.style.display = 'flex';
-  // menu.style.position = 'sticky';
-
-  // toggleBtn.style.fill= '';
+  toggleBtn.style.fill= 'navItem';
 };
 
 function closeNav() {
@@ -23,4 +23,6 @@ function toggleNav() {
   }
 }
 
-toggle.addEventListener('click', toggleNav);
+toggle.addEventListener('click', toggleNav());
+
+navItem.addEventListener('click'), toggleNav();
